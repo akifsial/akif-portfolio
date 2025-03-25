@@ -1,0 +1,80 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Fira Code";
+  src: url("/src/assets/fonts/FiraCode-Regular.ttf") format("truetype");
+  font-weight: 400; /* Regular */
+}
+
+@font-face {
+  font-family: "Fira Code";
+  src: url("/src/assets/fonts/FiraCode-Medium.ttf") format("truetype");
+  font-weight: 500; /* Medium */
+}
+
+@font-face {
+  font-family: "Fira Code";
+  src: url("/src/assets/fonts/FiraCode-Bold.ttf") format("truetype");
+  font-weight: 700; /* Bold */
+}
+
+body {
+  background-color: #010c15;
+  font-family: "Fira Code", monospace;
+}
+
+.heading {
+  font-family: "Fira Code", monospace;
+  font-weight: 400; /* Bold */
+}
+
+.greetings {
+  font-weight: 400; /* Regular */
+}
+
+.code-snippet {
+  font-family: "Fira Code", monospace;
+  font-weight: 500; /* Bold */
+}
+
+
+.github-link {
+  font-family: "Fira Code", monospace;
+  font-weight: 500; /* Bold */
+}
+
+.work-title {
+  font-family: "Fira Code", monospace;
+  font-weight: 500; /* Bold */
+}
+
+.snakeGame {
+  background: linear-gradient(180deg, #22786b 10%, #0c363d 90%);
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+.animate-blink {
+  animation: blink 0.8s infinite;
+  color : #94B6B2
+}
+
+/* Global Styling */
+
+.text-section::-webkit-scrollbar {
+  width: 13px; 
+}
+
+::-webkit-scrollbar-track {
+  border: 2px solid #1E2D3D;
+  
+}
+
+::-webkit-scrollbar-thumb {
+  background: #607B96; 
+  height: 2px;
+}
