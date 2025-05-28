@@ -5,14 +5,19 @@ import TerminalSvg from "/src/assets/svg/sidebar-1.svg";
 import UseCircleSvg from "/src/assets/svg/sidebar-2.svg";
 import PlusSvg from "/src/assets/svg/sidebar-3.svg";
 import MArrowFolder from "/src/assets/svg/m-down-with-arrow.svg";
+import peachFolder from "/src/assets/svg/peach-folder.svg"
+import greenFolder from "/src/assets/svg/green-folder.svg"
+import purpleFolder from "/src/assets/svg/purple-folder.svg"
+
+
 
 const section1 = [
   {
     name: "professional-info",
     items: [
-      { name: "experience", icon: "/src/assets/svg/peach-folder.svg" },
-      { name: "hard-skills", icon: "/src/assets/svg/green-folder.svg" },
-      { name: "soft-skills", icon: "/src/assets/svg/purple-folder.svg" },
+      { name: "experience", icon: peachFolder },
+      { name: "hard-skills", icon: greenFolder },
+      { name: "soft-skills", icon: purpleFolder },
     ],
   },
   {
@@ -28,9 +33,9 @@ const section2 = [
   {
     name: "personal-info",
     items: [
-      { name: "bio", icon: "/src/assets/svg/peach-folder.svg" },
-      { name: "interests", icon: "/src/assets/svg/green-folder.svg" },
-      { name: "education", icon: "/src/assets/svg/purple-folder.svg" },
+      { name: "bio", icon: peachFolder },
+      { name: "interests", icon: greenFolder },
+      { name: "education", icon: purpleFolder },
       { name: "high-school", icon: MArrowFolder },
       { name: "university", icon: MArrowFolder },
     ],
@@ -48,8 +53,8 @@ const section3 = [
   {
     name: "hobbies-info",
     items: [
-      { name: "sports", icon: "/src/assets/svg/peach-folder.svg" },
-      { name: "favorite-games", icon: "/src/assets/svg/green-folder.svg" },
+      { name: "sports", icon: peachFolder },
+      { name: "favorite-games", icon: greenFolder },
     ],
   },
   {
