@@ -8,7 +8,8 @@ import MArrowFolder from "/src/assets/svg/m-down-with-arrow.svg";
 import peachFolder from "/src/assets/svg/peach-folder.svg"
 import greenFolder from "/src/assets/svg/green-folder.svg"
 import purpleFolder from "/src/assets/svg/purple-folder.svg"
-
+import mailIcon from "/src/assets/svg/mail-icon.svg"
+import phoneIcon from "/src/assets/svg/phone-icon.svg"
 
 
 const section1 = [
@@ -23,8 +24,8 @@ const section1 = [
   {
     name: "contacts",
     items: [
-      { name: "user@gmail.com", icon: "/src/assets/svg/mail-icon.svg" },
-      { name: "+3598246359", icon: "/src/assets/svg/phone-icon.svg" },
+      { name: "user@gmail.com", icon: mailIcon },
+      { name: "+3598246359", icon: phoneIcon },
     ],
   },
 ];
@@ -43,8 +44,8 @@ const section2 = [
   {
     name: "contacts",
     items: [
-      { name: "user@gmail.com", icon: "/src/assets/svg/mail-icon.svg" },
-      { name: "+3598246359", icon: "/src/assets/svg/phone-icon.svg" },
+      { name: "user@gmail.com", icon: mailIcon },
+      { name: "+3598246359", icon: phoneIcon },
     ],
   },
 ];
@@ -60,8 +61,8 @@ const section3 = [
   {
     name: "contacts",
     items: [
-      { name: "user@gmail.com", icon: "/src/assets/svg/mail-icon.svg" },
-      { name: "+3598246359", icon: "/src/assets/svg/phone-icon.svg" },
+      { name: "user@gmail.com", icon: mailIcon },
+      { name: "+3598246359", icon: phoneIcon },
     ],
   },
 ];

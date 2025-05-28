@@ -72,24 +72,27 @@ function Header() {
             </Link>
             <div className="border-r border-[#1E2D3D] h-full"></div>
           </ul>
-        </div>
 
-        <div className="hidden lg:flex text-[#607B96] items-center h-full">
-          <div className="border-r border-[#1E2D3D] h-full"></div>
+        <div className="hidden lg:flex text-[#ffffff] items-center h-full">
+          <div className=" h-full"></div>
           <Link to="contact">
             <div
               className={`px-[23px] text-[16px] hover:bg-[#0E2030] py-[17px] cursor-pointer h-full flex items-center 
               ${
                 activeNav === "_contact-me"
-                  ? "border-b-2 border-[#FEA55F] text-[#FFFFFF]"
-                  : "text-[#607B96]"
+                  ? "border-b-2 border-[#FEA55F] text-[#e9e9e9]"
+                  : "text-[#ffffff]"
               }`}
               onClick={() => handleNavClick("_contact-me")}
             >
               _contact-me
             </div>
           </Link>
+            <div className="border-r border-[#1E2D3D] h-full"></div>
+
         </div>
+        </div>
+
 
         <div className="lg:hidden pr-4">
           <button onClick={toggleHamburger} className="text-[#607B96] text-[24px]">

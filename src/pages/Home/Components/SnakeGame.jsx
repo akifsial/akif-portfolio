@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 const CELL_SIZE = 20;
 const WIDTH = 238;
-const HEIGHT = 405;
+const HEIGHT = 400;
 
 const getRandomFood = () => {
   const maxX = Math.floor(WIDTH / CELL_SIZE);
