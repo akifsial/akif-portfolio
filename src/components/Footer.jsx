@@ -12,25 +12,39 @@ function Footer() {
         <span className="ps-[22px] flex items-center pe-[18px] ">find me in:</span>
 
         {/* Border */}
-        <div className="border-r border-[#1E2D3D] h-12 "></div>
+        <div className="border-r border-[#1E2D3D] h-12 md:flex hidden"></div>
 
-        <div href="#" className="text-[#607B96] ps-3.5 pe-3 flex hover:bg-[#0E2030] cursor-pointer hover:text-white">
+        <div className="text-[#607B96] md:flex hidden ps-3.5 pe-3  hover:bg-[#0E2030] cursor-pointer hover:text-white">
           <img src={TwitterSvg} alt="" />
         </div>
-        <div className="border-r border-[#1E2D3D] h-12 "></div>
+        <div className="border-r md:flex hidden border-[#1E2D3D] h-12 "></div>
 
-        <div href="#" className=" ps-2.5 pe-2 text-[#607B96] flex hover:bg-[#0E2030] cursor-pointer hover:text-white">
+        <div className=" ps-2.5 pe-2 text-[#607B96] md:flex hidden hover:bg-[#0E2030] cursor-pointer hover:text-white">
           <img src={FacebookSvg} alt="" />
         </div>
-        <div className="border-r border-[#1E2D3D] h-12 "></div>
+        <div className="border-r border-[#1E2D3D] h-12 md:flex hidden"></div>
       </div>
 
       {/* Right Section */}
       <div className="text-[#607B96] text-sm flex">
       <div className="border-r border-[#1E2D3D] h-12 "></div>
 
-        <div href="#" className="px-[23px]  hover:bg-[#0E2030] cursor-pointer flex items-center">
+        <div className="px-[23px] md:flex hidden hover:bg-[#0E2030] cursor-pointer items-center">
           username
+          <img className="ps-1" src={GithubSvg} alt="" /> 
+        </div>
+
+        <div className="text-[#607B96] ps-3.5 pe-3 md:hidden flex hover:bg-[#0E2030] cursor-pointer hover:text-white">
+          <img src={TwitterSvg} alt="" />
+        </div>
+        <div className="border-r border-[#1E2D3D] h-12 md:hidden flex"></div>
+
+        <div className=" ps-2.5 pe-2 text-[#607B96] md:hidden flex hover:bg-[#0E2030] cursor-pointer hover:text-white">
+          <img src={FacebookSvg} alt="" />
+        </div>
+        <div className="border-r border-[#1E2D3D] h-12 md:hidden flex"></div>
+
+        <div className="px-[15px] md:hidden hover:bg-[#0E2030] cursor-pointer flex items-center">
           <img className="ps-1" src={GithubSvg} alt="" /> 
         </div>
       </div>

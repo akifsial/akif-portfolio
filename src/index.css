@@ -1,7 +1,5 @@
 @import "tailwindcss";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
 
 @font-face {
   font-family: "Fira Code";
@@ -24,6 +22,7 @@
 body {
   background-color: #010c15;
   font-family: "Fira Code", monospace;
+  /* overflow-y: auto; */
 }
 
 .heading {
@@ -65,16 +64,62 @@ body {
 
 /* Global Styling */
 
-.text-section::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 13px; 
 }
 
 ::-webkit-scrollbar-track {
-  border: 2px solid #1E2D3D;
+  border: 2px solid #1a518b;
   
 }
 
 ::-webkit-scrollbar-thumb {
   background: #607B96; 
   height: 2px;
+}
+
+
+/* Hero Section -- snake game */
+
+@media only screen and (max-width: 1534px) {
+  .snake-game-main{
+    width: 400px !important;
+    height: 390px;
+    padding: 25px;
+  }
+  .game-screen{
+    width: 190px;
+    height: 330px;
+  }
+  .snake-game-btn{
+    margin-bottom: 10px;
+  }
+  .snake-game-keyboard{
+    width: 160px;
+    right: 13px;
+  }
+  .snake-game-keyboard p{
+    font-size: 11px;
+  }
+  .snake-game-arrows{
+    width: 40px;
+    height: 30px;
+  }
+  .snake-game-food{
+    bottom: 120px;
+    right: 60px;
+  }
+  .snake-game-food p{
+    font-size: 12px;
+  }
+  .snake-game-food-balls{
+    gap: 20px;
+  }
+  .snake-game-skip-btn{
+    padding: 6px 15px;
+    font-size: 12px;
+  }
+  .heading{
+    font-size: 40px !important;
+  }
 }

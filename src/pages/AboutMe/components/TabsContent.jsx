@@ -19,15 +19,12 @@ const TabContent = ({ tabName }) => {
 
   return (
     <div
-    className="text-section"
+    className="text-section w-[100%] lg:py-[16px] lg:pl-[16px] lg:pr-[8px] py-[16px] pl-[0px] pr-[8px] "
       style={{
-        padding: "16px",
         color: "white",
-        width: "100%",
         display: "flex",
         maxHeight: "100vh",
         overflowY: "auto",
-        paddingRight: "8px",
         height:"100%",
       }}
     >

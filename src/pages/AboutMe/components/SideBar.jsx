@@ -92,17 +92,17 @@ const Sidebar = () => {
   };
 
   return (
-    <div className="flex h-full">
-      <div className="w-[68px] flex border-r border-[#1E2D3D] flex-col items-center py-4 space-y-6">
+    <div className="flex lg:flex-row flex-col h-full ">
+      <div className="lg:w-[68px] w-[95%] !px-6 lg:h-full h-[50px] border-b border-[#1E2D3D] lg:border-r lg:justify-start justify-between flex lg:border-[#1E2D3D] flex-row lg:flex-col items-center py-4 space-y-6">
         <img
           src={TerminalSvg}
           onClick={() => setSections(section1)}
-          className={`cursor-pointer ${sections === section1 ? "opacity-100" : "opacity-50"}`}
+          className={`cursor-pointer lg:mt-0 mt-5.5 ${sections === section1 ? "opacity-100" : "opacity-50"}`}
         />
         <img
           src={UseCircleSvg}
           onClick={() => setSections(section2)}
-          className={`cursor-pointer ${sections === section2 ? "opacity-100" : "opacity-50"}`}
+          className={`cursor-pointer lg:mt-0 mt-5.5 ${sections === section2 ? "opacity-100" : "opacity-50"}`}
         />
         <img
           src={PlusSvg}
@@ -111,8 +111,13 @@ const Sidebar = () => {
         />
       </div>
 
+
+      <div className="">
       <InfoSidebar sections={sections} onSelectTab={addTab} activeTab={activeTab} />
-      <div className="flex flex-1 overflow-x-auto">
+      </div>
+
+      
+      <div className="flex flex-1  overflow-x-auto">
         <Tabs openTabs={openTabs} onClose={closeTab} activeTab={activeTab} />
       </div>
     </div>

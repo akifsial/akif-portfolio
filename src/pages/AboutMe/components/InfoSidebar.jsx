@@ -34,10 +34,10 @@ const InfoSidebar = ({ sections = [], onSelectTab }) => {
   };
 
   return (
-    <div className="bg-[#011627] border-r border-[#1E2D3D] w-[243px] h-screen text-gray-300 text-sm">
+    <div className="bg-[#011627] border-r mb-[30px] border-[#1E2D3D] lg:w-[243px] lg:h-screen w-full  text-gray-300 text-sm">
       {sections.map((section) => (
         <div key={section.name}>
-          <div className="ps-[14px] pt-3 pb-1.5 border-[#1E2D3D] pe-[83px] border-b">
+          <div className="ps-[14px] pt-3 lg:bg-[#011627] bg-[#1e2d3d] lg:mb-0 mb-0.5 pb-1.5 border-[#1E2D3D] pe-[83px] border-b">
             <button
               onClick={() => toggleSection(section.name)}
               className="flex cursor-pointer items-center w-full text-left font-light py-2"
