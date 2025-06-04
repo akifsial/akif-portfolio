@@ -15,7 +15,7 @@ export default function ContactForm() {
 
   const onSubmit = (data) => {
      setContact(data);
-    console.log("Form Data:", data);
+    // console.log("Form Data:", data);
   };
 
   return (
