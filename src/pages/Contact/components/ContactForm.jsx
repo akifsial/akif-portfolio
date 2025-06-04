@@ -12,11 +12,17 @@ export default function ContactForm() {
   } = useForm();
 
     const setContact = useContactStore((state) => state.setContact);
+const onSubmit = (data) => {
+  setContact(data);
 
-  const onSubmit = (data) => {
-     setContact(data);
-    // console.log("Form Data:", data);
-  };
+  const phoneNumber = "923218615906";
+  const message = `Name: ${data.name}%0AEmail: ${data.email}%0AMessage: ${data.message || "No message"}`;
+  const whatsappURL = `https://api.whatsapp.com/send/?phone=${phoneNumber}&text=${message}&type=phone_number&app_absent=0`;
+
+  window.open(whatsappURL, "_blank");
+};
+
+
 
   return (
     <div className="min-h-screen px-3 lg:pl-[76px] bg-[#011627] lg:flex justify-center">
