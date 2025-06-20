@@ -32,7 +32,7 @@ const HeroSection = () => {
 
       {/* Name */}
       <h1 className="text-[#E5E9F0] text-[62px] heading font-light">
-        Micheal Weaver
+        Akif Sial
       </h1>
 
       {/* Typing Effect Job Title */}
