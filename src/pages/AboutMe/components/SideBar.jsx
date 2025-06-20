@@ -25,7 +25,7 @@ const section1 = [
     name: "contacts",
     items: [
       { name: "user@gmail.com", icon: mailIcon },
-      { name: "+3598246359", icon: phoneIcon },
+      { name: "Contact", icon: phoneIcon },
     ],
   },
 ];
@@ -45,7 +45,7 @@ const section2 = [
     name: "contacts",
     items: [
       { name: "user@gmail.com", icon: mailIcon },
-      { name: "+3598246359", icon: phoneIcon },
+      { name: "Contact", icon: phoneIcon },
     ],
   },
 ];
@@ -62,7 +62,7 @@ const section3 = [
     name: "contacts",
     items: [
       { name: "user@gmail.com", icon: mailIcon },
-      { name: "+3598246359", icon: phoneIcon },
+      { name: "Contact", icon: phoneIcon },
     ],
   },
 ];

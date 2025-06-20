@@ -1,8 +1,8 @@
 const TabContent = ({ tabName }) => {
   const tabData = {
-    experience: "This is experience content.\nIt \nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\nIt\ has multiple lines.\nEach line will be numbered.",
-    "hard-skills": "This is hard-skills content.\nAdding line numbers dynamically.",
-    "soft-skills": "This is soft-skills content.",
+    experience: "Developed a role-based system with Super Admin, Company Admin,\n Sales Manager, and Sales Rep roles using React.js, TypeScript, Tailwind CSS.\nImplemented real-time chat, permission controls, and dynamic dashboards.\nDesigned a car wash service platform with multi-role access\n (Admin, Franchise, Detailer) featuring responsive UI and seamless API integrations.\nBuilt a hospital management system using React.js, TypeScript, and Context API,\n optimized with memoization and code-splitting for performance.\n",
+    "hard-skills": "HTML5, CSS3, JavaScript\React.js, TypeScript\n Tailwind CSS\n RESTful API Integration\n TanStack Query (React Query)\n Context API\n Component-Driven Architecture\n Git & GitHub\n Figma to Code Conversion\n Performance Optimization (Memoization, Code-splitting)\n Responsive UI Design\n",
+    "soft-skills": "Problem Solving\n Communication\n Attention to Detail\n Time Management\n Team Collaboration\n Adaptability\n Client Communication & Feedback Handling\n Self-Learning & Growth Mindset\n",
     bio: "This is bio content.",
     interests: "This is interests content.",
     education: "This is education content.",
@@ -10,8 +10,8 @@ const TabContent = ({ tabName }) => {
     university: "This is university content.",
     sports: "This is sports content.",
     "favorite-games": "This is favorite games content.",
-    "user@gmail.com": "This is username content.",
-    "+3598246359": "This is Number",
+    "user@gmail.com": "contact.akifsial@gmail.com",
+    "Contact": "03019050165",
   };
 
   const content = tabData[tabName];

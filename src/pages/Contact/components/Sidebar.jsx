@@ -47,7 +47,7 @@ const Sidebar = () => {
             <div className="flex items-center mb-2.5 px-5 group gap-1.5">
               <FaPhoneAlt className="group-hover:text-white" />
               <span className="cursor-pointer group-hover:text-white transition duration-200">
-                +3598246359
+                Contact
               </span>
             </div>
           </div>
