@@ -3,7 +3,7 @@ import SnakeGame from "./SnakeGame";
 
 
 const HeroSection = () => {
-  const [text, setText] = useState("Frontend Developer");
+  const [text, setText] = useState("Frontend Engineer");
   const [displayedText, setDisplayedText] = useState("");
   const [isTypingComplete, setIsTypingComplete] = useState(false);
   const [index, setIndex] = useState(0);
