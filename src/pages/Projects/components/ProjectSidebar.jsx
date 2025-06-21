@@ -35,7 +35,7 @@ const Sidebar = ({ selectedTabs, setSelectedTabs }) => {
   };
   
   return (
-    <div className=" text-white border-[#1E2D3D] border-r h-[100vh] ">
+    <div className=" text-white border-[#1E2D3D] border-r h-[70vh] lg:h-[100vh] ">
       <div> 
         <div className="p-6 lg:hidden flex">
           <h1>_projects</h1>

@@ -10,10 +10,8 @@ const Sidebar = () => {
   const [showSocials, setShowSocials] = useState(true);
 
   const socials = [
-    { name: "YouTube channel" },
-    { name: "GuruShots profile" },
-    { name: "Instagram account" },
-    { name: "Twitch profile" },
+    { name: "Github", URL: "https://github.com/akifsial" },
+    { name: "Linkedin", URL: "https://www.linkedin.com/in/akifsial/" },
   ];
 
   return (
@@ -75,14 +73,14 @@ const Sidebar = () => {
                 className="flex mb-2 px-5 items-center gap-1.5 group"
               >
                 <RxUpload className="text-lg group-hover:text-[#fff] transition duration-200" />
-                <p
-                  href={social.url}
+                <a
+                  href={social.URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="cursor-pointer text-sm group-hover:text-white transition duration-200"
                 >
                   {social.name}
-                </p>
+                </a>
               </div>
             ))}
           </div>

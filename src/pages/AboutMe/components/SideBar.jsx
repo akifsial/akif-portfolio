@@ -37,8 +37,8 @@ const section2 = [
       { name: "bio", icon: peachFolder },
       { name: "interests", icon: greenFolder },
       { name: "education", icon: purpleFolder },
-      { name: "high-school", icon: MArrowFolder },
-      { name: "university", icon: MArrowFolder },
+      // { name: "high-school", icon: MArrowFolder },
+      // { name: "university", icon: MArrowFolder },
     ],
   },
   {

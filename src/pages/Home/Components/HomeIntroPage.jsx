@@ -51,7 +51,8 @@ const HeroSection = () => {
           const <span className="text-[#43D9AD] text-[12px] xl:text-[14px]">githubLink</span>{" "}
           <span className="xl:text-[14px] text-[12px] text-[#fff] pe-2">=</span>
           <span className="text-[#E99287] text-[12px] xl:text-[14px]">
-            “<span className="underline">https://github.com/example/url</span>”
+            “<span className="underline"><a href="https://github.com/akifsial/akif-portfolio" target="_blank"
+            rel="noopener noreferrer">https://github.com/akifsial/akif-portfolio</a></span>”
           </span>
         </p>
       </div>

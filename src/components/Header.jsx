@@ -22,7 +22,7 @@ function Header() {
       <div className="flex justify-between items-center h-full">
         <div className="flex text-[#607B96] items-center h-full">
           <div className="ps-[22px] pe-[20px] lg:pe-[154px] py-[17px] hover:bg-[#0E2030] cursor-pointer h-full flex items-center">
-            <h1 className="text-[16px]">micheal-weaver</h1>
+            <h1 className="text-[16px]">Akif Sial</h1>
           </div>
           <div className="lg:border-r lg:border-[#1E2D3D] h-full hidden md:block"></div>
 
