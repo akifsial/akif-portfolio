@@ -38,14 +38,15 @@ const Sidebar = () => {
             <div className="flex items-center gap-1.5 group py-2.5 px-5">
               <IoMail className="group-hover:text-white" />
               <span className="cursor-pointer group-hover:text-white transition duration-200">
-                user@gmail.com
+                {/* user@gmail.com */}
+                contact.akifsial@gmail.com
               </span>
             </div>
 
             <div className="flex items-center mb-2.5 px-5 group gap-1.5">
               <FaPhoneAlt className="group-hover:text-white" />
               <span className="cursor-pointer group-hover:text-white transition duration-200">
-                Contact
+                Contact (+923019050165)
               </span>
             </div>
           </div>

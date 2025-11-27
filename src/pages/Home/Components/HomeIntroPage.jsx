@@ -32,7 +32,7 @@ const HeroSection = () => {
 
       {/* Name */}
       <h1 className="text-[#E5E9F0] text-[62px] heading font-light">
-        Akif Sial
+        Akif
       </h1>
 
       {/* Typing Effect Job Title */}
@@ -48,7 +48,7 @@ const HeroSection = () => {
 
         {/* GitHub Link */}
         <p className="text-[#4D5BCE] github-link text-[12px] xl:text-[14px]">
-          const <span className="text-[#43D9AD] text-[12px] xl:text-[14px]">githubLink</span>{" "}
+          const <span className="text-[#43D9AD] text-[12px] xl:text-[14px]">code</span>{" "}
           <span className="xl:text-[14px] text-[12px] text-[#fff] pe-2">=</span>
           <span className="text-[#E99287] text-[12px] xl:text-[14px]">
             “<span className="underline"><a href="https://github.com/akifsial/akif-portfolio" target="_blank"

@@ -1,27 +1,67 @@
-import React from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import Input from "../../../components/Input";
 import CodeSnippet from "./CodeSnippet";
 import useContactStore from "../../../store/useContactStore";
+import axios from "axios";
+import toast from "react-hot-toast";
 
 export default function ContactForm() {
   const {
     register,
     handleSubmit,
     formState: { errors },
+    setValue
   } = useForm();
 
-    const setContact = useContactStore((state) => state.setContact);
-const onSubmit = (data) => {
-  setContact(data);
+  // Emailjs Code
 
-  const phoneNumber = "923218615906";
-  const message = `Name: ${data.name}%0AEmail: ${data.email}%0AMessage: ${data.message || "No message"}`;
-  const whatsappURL = `https://api.whatsapp.com/send/?phone=${phoneNumber}&text=${message}&type=phone_number&app_absent=0`;
+  const [status, setStatus] = useState("");
+  const [isLoading, setIsLoading] = useState(false)
 
-  window.open(whatsappURL, "_blank");
-};
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
 
+  const onSubmit = async (data) => {
+
+    const serviceID = "service_ny99lcf";
+    const templateID = "template_l9nkmpr";
+    const publicKey = "PB7nKS56J093nXl6k";
+
+    const formData = new FormData();
+    formData.append("service_id", serviceID);
+    formData.append("template_id", templateID);
+    formData.append("user_id", publicKey);
+    formData.append("user_name", data?.name);
+    formData.append("user_email", data?.email);
+    formData.append("message", data?.message);
+    formData.append("lib_version", "4.4.1");
+    formData.append("subject", "no subject from user ");
+
+    try {
+      setIsLoading(true)
+      const response = await axios.post(
+        "https://api.emailjs.com/api/v1.0/email/send-form",
+        formData,
+
+      );
+
+      if (response?.data === "OK") {
+        toast.success("Your message has been sent successfully!")
+        setIsLoading(false)
+        setValue("name","")
+        setValue("email","")
+        setValue("message","")
+
+
+      }
+      setStatus("Message sent successfully!");
+    } catch (error) {
+      setIsLoading(false)
+      toast.error("Failed to send message. Please try again.");
+    }
+  };
 
 
   return (
@@ -80,7 +120,7 @@ const onSubmit = (data) => {
           type="submit"
           className="bg-[#1E2D3D] hover:bg-[#263B4C] cursor-pointer text-white px-4 py-2 rounded-[8px] font-mono text-sm transition"
         >
-          submit-message
+          {isLoading ? "sending..." : "submit-message"}
         </button>
       </form>
 
