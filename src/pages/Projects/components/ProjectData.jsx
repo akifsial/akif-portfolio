@@ -37,7 +37,7 @@ const projectsData = [
   {
     id: 5,
     name: "HARVEST CULTIVATION",
-    category: "HTML",
+    category: "React",
     description: "Duis aute irure dolor in velit esse cillum dolore.",
     image: img5,
   },
